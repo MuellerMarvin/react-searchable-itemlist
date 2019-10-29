@@ -13,16 +13,28 @@ class App extends React.Component {
   }
 }
 
-function SearchBar() {
-  return(
+function SearchBar(props) {
+  return (
     <div class="SearchBar">
     </div>
   );
 }
 
-function ItemList() {
-  return(
+function ItemList(props) {
+  return (
     <div class="ItemList">
+    </div>
+  );
+}
+
+function ListItem(props) {
+  return (
+    <div class="ListItem">
+      <image></image>
+      <div>
+        <p class="ListItemTitle"></p>
+        <p class="ListItemDescription"></p>
+      </div>
     </div>
   );
 }
