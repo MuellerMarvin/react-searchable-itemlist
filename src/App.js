@@ -3,11 +3,35 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
+  GetDefaultItemList() {
+    let itemList = [];
+
+    itemList.push(
+      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+    );
+    itemList.push(
+      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+    );
+    itemList.push(
+      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+    );
+    itemList.push(
+      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+    );
+    itemList.push(
+      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+    );
+    
+
+    return itemList;
+  }
+
   render() {
+    let itemList = this.GetDefaultItemList();
     return (
       <div class="App">
         <SearchBar></SearchBar>
-        <ItemList></ItemList>
+        <ItemList ListItems={ itemList }></ItemList>
       </div>
     );
   }
@@ -23,6 +47,7 @@ function SearchBar(props) {
 function ItemList(props) {
   return (
     <div class="ItemList">
+      { props.ListItems }
     </div>
   );
 }
@@ -30,10 +55,10 @@ function ItemList(props) {
 function ListItem(props) {
   return (
     <div class="ListItem">
-      <image></image>
+      <img src={ props.ImageSource }></img>
       <div>
-        <p class="ListItemTitle"></p>
-        <p class="ListItemDescription"></p>
+        <p class="ListItemTitle">{ props.Title }</p>
+        <p class="ListItemDescription">{ props.Description }</p>
       </div>
     </div>
   );
