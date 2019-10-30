@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
@@ -37,11 +36,22 @@ class App extends React.Component {
   }
 }
 
-function SearchBar(props) {
-  return (
-    <div class="SearchBar">
-    </div>
-  );
+class SearchBar extends React.Component {
+  constructor(props) {
+    super(props);
+
+    // Bind functions to the component
+    this.render = this.render.bind(this);
+  }
+
+  render() {
+    return (
+      <div class="SearchBar">
+        <input class="SearchBarInput"></input>
+        <button>Search!</button>
+      </div>
+    );
+  }
 }
 
 function ItemList(props) {
