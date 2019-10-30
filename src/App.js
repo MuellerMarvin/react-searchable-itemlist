@@ -47,8 +47,8 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div class="SearchBar">
-        <input class="SearchBarInput"></input>
-        <button>Search!</button>
+        <input id="SearchBarInput"></input>
+        <button>Search</button>
       </div>
     );
   }
