@@ -64,8 +64,8 @@ function ItemList(props) {
 function ListItem(props) {
   var description = props.Description;
 
-  if(props.Description.length > 160) {
-    description = props.Description.slice(0, 160) + "...";
+  if(props.Description.length > 140) {
+    description = props.Description.slice(0, 140) + "...";
   }
 
   return (

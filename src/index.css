@@ -24,7 +24,8 @@ code {
 }
 
 .SearchBar {
-  max-width: 400px;
+  max-width: 800px;
+  min-width: 240px;
   text-align: left;
   height: 45px;
   width: 85%;
@@ -71,7 +72,8 @@ code {
 
 .ItemList {
   height: 100%;
-  max-width: 400px;
+  max-width: 800px;
+  min-width: 240px;
 }
 
 .ListItem {
@@ -107,18 +109,21 @@ code {
 .ListItemTitle {
   font-weight: bold;
   height: 15px;
+  font-size: 1.1em;
   width: 100%;
+  letter-spacing: 1.2px;
 }
 
 .ListItemDescription {
   font-size: 0.8em;
   font-weight: lighter;
+  color: rgba(0, 0, 0, 0.75);
   height: 100%;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 800px) {
   .SearchBar {
-    width: 340px;
-    left: calc(50% - (340px/2));
+    width: 680px;
+    left: calc(50% - (680px/2));
   }
 }
