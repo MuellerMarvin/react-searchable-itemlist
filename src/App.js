@@ -62,12 +62,18 @@ function ItemList(props) {
 }
 
 function ListItem(props) {
+  var description = props.Description;
+
+  if(props.Description.length > 160) {
+    description = props.Description.slice(0, 160) + "...";
+  }
+
   return (
     <div class="ListItem">
       <img src={ props.ImageSource }></img>
       <div>
         <p class="ListItemTitle">{ props.Title }</p>
-        <p class="ListItemDescription">{ props.Description }</p>
+        <p class="ListItemDescription">{ description }</p>
       </div>
     </div>
   );

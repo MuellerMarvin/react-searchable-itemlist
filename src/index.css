@@ -97,6 +97,7 @@ code {
   text-align: left;
   display: block;
   height: 40%;
+  overflow: hidden;
 }
 
 .ListItem > div > p {
