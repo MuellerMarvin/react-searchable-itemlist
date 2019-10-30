@@ -6,19 +6,17 @@ class App extends React.Component {
     let itemList = [];
 
     itemList.push(
-      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+      <ListItem Title="Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
     );
     itemList.push(
-      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+      <ListItem Title="Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
     );
     itemList.push(
-      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
-    );
-    itemList.push(
-      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
-    );
-    itemList.push(
-      <ListItem Title="Title" Description="This is the description of the item that should be able to be a little longer than you might be used to from a title." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+      <ListItem Title="Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+    );    itemList.push(
+      <ListItem Title="Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
+    );    itemList.push(
+      <ListItem Title="Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
     );
     
 
@@ -30,6 +28,7 @@ class App extends React.Component {
     return (
       <div class="App">
         <SearchBar></SearchBar>
+        <div class="TopSpacer"></div>
         <ItemList ListItems={ itemList }></ItemList>
       </div>
     );

@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
+  margin: auto;
 }
 
 body {
@@ -17,7 +18,13 @@ code {
     monospace;
 }
 
+.TopSpacer {
+  height: 45px;
+  margin-bottom: 40px;
+}
+
 .SearchBar {
+  max-width: 400px;
   text-align: left;
   height: 45px;
   width: 85%;
@@ -25,6 +32,9 @@ code {
   margin-top: 20px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  position: fixed;
+  background: white;
+  left: calc(50% - (85% / 2));
 }
 
 .SearchBar > input {
@@ -61,6 +71,7 @@ code {
 
 .ItemList {
   height: 100%;
+  max-width: 400px;
 }
 
 .ListItem {
@@ -94,11 +105,19 @@ code {
 
 .ListItemTitle {
   font-weight: bold;
-  height: 20px;
+  height: 15px;
+  width: 100%;
 }
 
 .ListItemDescription {
   font-size: 0.8em;
   font-weight: lighter;
   height: 100%;
+}
+
+@media only screen and (min-width: 400px) {
+  .SearchBar {
+    width: 340px;
+    left: calc(50% - (340px/2));
+  }
 }
