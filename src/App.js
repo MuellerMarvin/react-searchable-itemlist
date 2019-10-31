@@ -75,7 +75,7 @@ function ListItem(props) {
 
   return (
     <div class="ListItem">
-      <img src={ props.ImageSource }></img>
+      <img src={ props.ImageSource } alt="missing"/>
       <div>
         <p class="ListItemTitle">{ title }</p>
         <p class="ListItemDescription">{ description }</p>
