@@ -1,24 +1,19 @@
 import React from 'react';
 import './App.css';
+import './Item.js';
+import { Item } from './Item.js';
 
 class App extends React.Component {
   GetDefaultItemList() {
+    let item = new Item("Example Title",
+                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+                         "https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"
+                         );
     let itemList = [];
 
-    itemList.push(
-      <ListItem Title="Example Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
-    );
-    itemList.push(
-      <ListItem Title="Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
-    );
-    itemList.push(
-      <ListItem Title="Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
-    );    itemList.push(
-      <ListItem Title="Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
-    );    itemList.push(
-      <ListItem Title="Title" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat pulvinar ante pretium pretium. Quisque mollis a urna ut accumsan. Maecenas ut mattis tellus. Cras eu congue metus, sit amet pulvinar nunc. Cras dignissim lacus nec bibendum bibendum. Sed ipsum ex, imperdiet nec metus vitae, maximus ultrices metus. Duis posuere pellentesque nibh vitae molestie. Donec ullamcorper bibendum tempor. Nunc massa leo, placerat in nisi vitae, bibendum pellentesque eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." ImageSource="https://upload.wikimedia.org/wikipedia/commons/e/ed/20170522_Schalkenmehrener_Maar_30.jpg"></ListItem>
-    );
-    
+    for(let i = 0; i < 10; i++) {
+      itemList.push(<ListItem Title={ item.title } Description={ item.description } ImageSource={ item.imageSource }></ListItem>);
+    }
 
     return itemList;
   }
